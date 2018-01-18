@@ -1,0 +1,43 @@
+{
+	"name": "sandervanwettum",
+	"version": "1.0.0",
+	"description": "Sander van Wettum",
+	"author": "Lasse <contact@template01.info>",
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate",
+		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+		"precommit": "npm run lint"
+	},
+	"config": {
+		"nuxt": {
+			"host": "0.0.0.0",
+			"port": "8080"
+		}
+	},
+	"dependencies": {
+		"axios": "^0.16.2",
+		"document-offset": "^1.0.4",
+		"lodash": "^4.17.4",
+		"node-sass": "^4.7.2",
+		"nuxt": "^1.0.0",
+		"sass-loader": "^6.0.6",
+		"smoothscroll-polyfill": "^0.4.0",
+		"vue-awesome-swiper": "^3.1.0",
+		"vue-lazyload": "^1.1.4"
+	},
+	"devDependencies": {
+		"babel-eslint": "^7.2.3",
+		"eslint": "^4.15.0",
+		"eslint-config-standard": "^10.2.1",
+		"eslint-loader": "^1.9.0",
+		"eslint-plugin-html": "^3.1.1",
+		"eslint-plugin-import": "^2.7.0",
+		"eslint-plugin-node": "^5.1.1",
+		"eslint-plugin-promise": "^3.5.0",
+		"eslint-plugin-standard": "^3.0.1"
+	},
+	"private": true
+}
