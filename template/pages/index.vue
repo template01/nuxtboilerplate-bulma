@@ -9,13 +9,14 @@
         </div>
         <div class="column">
           <p class="is-size-3">
-            screensize from store: {{screensize}}
+            screensize from store:
+            <span v-html="screensize"></span>
           </p>
         </div>
         <div class="column">
           <p class="is-size-3">
             app initated from store:
-            {{appinitated}}
+            <span v-html="appinitated"></span>
           </p>
         </div>
         <div class="column">

@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <p class="is-size-3">
-      {{genericData}}
+      <span v-html="genericData"></span>
     </p>
   </div>
 </template>
@@ -18,6 +18,8 @@ export default {
     return {
       genericData: 'generic component text'
     }
+  },
+  methods:{
   },
   computed: {
     ...mapGetters({
