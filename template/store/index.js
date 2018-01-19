@@ -1,7 +1,8 @@
 export const state = () => ({
   appinitated:false,
+  apiRoot: 'https://jsonplaceholder.typicode.com',
+  posts:[],
   screensize: 0,
-  apiRoot: 'https://api.sandervanwettum.com/?rest_route=/',
   screensizeformat:null
 })
 
@@ -18,16 +19,24 @@ export const state = () => ({
 
 export const getters = {
 
-  getappinitated(state) {
+  GET_APP_INITIATED(state) {
     return state.appinitated
   },
 
-  screensize(state){
+  GET_SCREENSIZE(state){
     return state.screensizeformat
+  },
+
+  GET_POSTS(state){
+    return state.posts
   },
 }
 
 export const mutations = {
+
+  SET_POSTS(state, posts) {
+    state.posts = posts;
+  },
 
   SET_APPINITIATED(state, toggle) {
     state.appinitated = toggle;

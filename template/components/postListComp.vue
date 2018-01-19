@@ -1,8 +1,13 @@
 <template>
-  <div  class="">
-    <p class="is-size-3">
-      <span v-html="genericData"></span>
+  <div  class="mt-80">
+    <p class="has-text-centered is-size-3 mb-80" >
+      Posts from store
     </p>
+    <ul>
+      <li class="has-text-centered is-size-5" v-for="item in posts" v-html="item.title">
+
+      </li>
+    </ul>
   </div>
 </template>
 <script>
@@ -23,7 +28,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-     appinitated: "GET_APP_INITIATED",
+     posts: "GET_POSTS",
     }),
   },
 

@@ -7,9 +7,7 @@ import {
 Vue.mixin({
   computed: {
     ...mapGetters({
-      issmallscreen: "issmallscreen",
-      isxlscreen: "isxlscreen",
-      screensize: "screensize",
+      screensize: "GET_SCREENSIZE",
     }),
   }
 })
