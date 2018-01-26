@@ -29,7 +29,7 @@ module.exports = {
   // mode: 'spa',
 
   css: [
-    '~assets/marginpaddinghelpers.css',
+    '~assets/css/marginpaddinghelpers.css',
     '~assets/bulmaCustom/custom/custom.css',
     '~assets/fonts/okomito/stylesheet.css',
     //'~assets/main.css',
@@ -113,6 +113,12 @@ module.exports = {
    */
   build: {
     vendor: ['axios', 'lodash'],
+
+
+   styleResources: {
+      scss: './assets/sass/variables.scss'
+    },
+
 
     postcss: {
       plugins: {
