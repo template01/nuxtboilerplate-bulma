@@ -75,10 +75,14 @@ module.exports = {
   plugins: [
     '~/plugins/lodash-plugin.js',
     //'~/plugins/maps.js',
-    '~/plugins/resizer.js',
+    
     //GLOBAL MIXINS
     '~/mixins/computedresizerglobalmixin.js',
 
+    {
+      src: '~/plugins/resizer.js',
+      ssr: false
+    },
     {
       src: '~/plugins/vueawesomeswiper-plugin.js',
       ssr: false

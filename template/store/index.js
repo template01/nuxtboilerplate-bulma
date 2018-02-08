@@ -1,7 +1,10 @@
+import axios from 'axios'
+
 export const state = () => ({
   appinitated:false,
   apiRoot: 'https://jsonplaceholder.typicode.com',
   posts:[],
+  previewData:[],
   screensize: 0,
   screensizeformat:null
 })
@@ -30,9 +33,17 @@ export const getters = {
   GET_POSTS(state){
     return state.posts
   },
+
+  GET_PREVIEWDATA(state){
+    return state.previewData
+  },
 }
 
 export const mutations = {
+
+  SET_PREVIEWDATA(state, previewData) {
+    state.previewData = previewData;
+  },
 
   SET_POSTS(state, posts) {
     state.posts = posts;
@@ -46,4 +57,19 @@ export const mutations = {
     state.screensizeformat = screensizeformat;
   },
 
+}
+
+// LOAD INITIAL DATA
+
+export const actions = {
+  async nuxtServerInit({
+    commit,
+    state
+  }, {
+    req
+  }) {
+
+    const postsRes = await axios.get(state.apiRoot + '/posts/1')
+
+  }
 }
