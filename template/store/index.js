@@ -69,7 +69,7 @@ export const actions = {
     req
   }) {
 
-    const postsRes = await axios.get(state.apiRoot + '/posts/1')
+    const postsRes = await axios.get(state.apiRoot + '/posts')
 
   }
 }
