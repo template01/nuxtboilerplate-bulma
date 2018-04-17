@@ -32,11 +32,6 @@ module.exports = {
     '~assets/css/marginpaddinghelpers.css',
     '~assets/bulmaCustom/custom/custom.css',
     '~assets/fonts/okomito/stylesheet.css',
-    //'~assets/main.css',
-    //'~assets/font-awesome-4.7.0/css/font-awesome.min.css',
-    // 'swiper/dist/css/swiper.css',
-    //'~assets/swiper.css',
-
   ],
 
 
@@ -73,14 +68,14 @@ module.exports = {
   ],
 
   plugins: [
-    '~/plugins/lodash-plugin.js',
-    //'~/plugins/maps.js',
-    
+
     //GLOBAL MIXINS
-    '~/mixins/computedresizerglobalmixin.js',
+    // '~/mixins/computedresizerglobalmixin.js',
+
+    '~/plugins/lodash-plugin.js',
 
     {
-      src: '~/plugins/resizer.js',
+      src: '~/plugins/vuemq.js',
       ssr: false
     },
     {

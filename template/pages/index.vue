@@ -11,7 +11,7 @@
         <div class="column">
           <p class="is-size-3">
             screensize from store:
-            <span v-html="screensize"></span>
+            <span v-html="$mq"></span>
           </p>
         </div>
         <div class="column">
